@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<title>HOME | Books Library</title>
+		<link href = "{{ url_for('static', filename = 'common.css') }}" rel="stylesheet" />
+	</head>
+	<body>
+		<h1>* Book Library *</h1>
+		<fieldset>
+			<legend>Available Books</legend>
+			
+			{% if books is defined and books|length >0 %}
+			<table align="center">
+				<tr><th>Title</th><th>Author</th><th>Publisher</th></tr>
+				{% for book in books %}
+					<tr>
+						<td> {{ book.title }} </td><td> {{ book.author }} </td><td> {{ book.publisher }} </td>
+					</tr>
+				{% endfor %}
+			</table>
+			{% else %}
+				<h4 style="color:red;">No book is available...!!</h4>
+			{% endif %}
+			<br />
+			<a href="{{ url_for('addBook') }}"> Add Book </a>
+			<br />
+			<p>
+				<hr width="10%"/>
+				<i>To search any book put book name in url as "/books/&lt;book-name&gt;"</i>
+			</p>
+		</fieldset>
+	</body>
+	
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Book Info</title>
+		<link href = "{{ url_for('static', filename = 'common.css') }}" rel="stylesheet" />
+	</head>
+	<body>
+		<h1>* Book Library *</h1>
+		<fieldset>
+			<legend>Book Search</legend>
+			
+			{% if book_found is defined and book_found is mapping %}
+				<table align="center">
+					<tr><th>Title</th><th>Author</th><th>Publisher</th></tr>
+						<tr>
+							<td> {{ book_found.title }} </td><td> {{ book_found.author }} </td><td> {{ book_found.publisher }} </td>
+						</tr>
+						
+				</table>
+			{% else %}
+				<h4>{{ book_found }}</h4>
+			{% endif %}
+			<a href="{{ url_for('index') }}"> Back </a>
+		</fieldset>
+	</body>
+	
+</html>

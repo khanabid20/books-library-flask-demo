@@ -1,0 +1,54 @@
+
+h1{
+	text-align: center;
+	color: green;
+}
+
+fieldset{
+	text-align: center;
+	border-color: lightgray;
+	padding: 20px;
+}
+
+input{
+	border-radius: 6px;
+	padding: 8px 15px;
+}
+input[type=text]:focus{
+	border-color: rgb(128, 128, 255);
+}
+
+.btn_primary{
+	padding: 10px 20px;
+	background-color: rgb(51, 51, 255);	
+	border: none;
+	box-shadow: 3px 6px 4px gray;
+	color:white;
+}
+.btn_primary:hover{
+	background-color: rgba(51, 51, 255, 0.5);
+}
+
+table{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 600px;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
