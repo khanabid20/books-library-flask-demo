@@ -14,7 +14,7 @@ Also utilized the jinja templating (too east to understand). Would suggest this 
 
 ### How UI looks :-
 
-_UI was not intension of this app_ but functionality was
+_UI was not intention of this app_ but functionality was
 
   #### 1. Home page with books details 
   <center><img src="https://github.com/khanabid20/books-library-flask-demo/blob/master/images/books-home.PNG" alt="home" /></center>
